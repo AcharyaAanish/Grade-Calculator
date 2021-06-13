@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="grade_calculator.css">
+	</head>
+	<body>
+	<form class="contain">
+		
+		<table border= "1px" class="tab">
+		<tr>
+			<th colspan="9" style="color: cornflowerblue; font-size: larger; border: none;">Student Details</th>
+		</tr>
+		<tr>
+				<td rowspan="2" colspan="6" style="border: none;">Student Name:<input type="text" id="name"  style="object-fit: contain;"required></td>
+		</tr>
+		<tr>
+				<td colspan="3" style="border: none;">Date of Birth:<input type="date" id="dob" required style="object-fit: contain;"></td>
+		</tr>
+		<tr>
+			<th colspan="9" style="color: burlywood;font-size: larger;">Marks Details</th>
+		</tr>
+			<tr>
+				<th rowspan="2">S.N0</th>
+				<th rowspan="2">Subject</th>
+				<th rowspan="2">Credit Hour</th>
+				<th rowspan="2">Full Marks</th>
+				<th colspan="2">Obtained Grade</th>
+				<th rowspan="2">Final Grade</th>
+				<th rowspan="2">Grade Point</th>
+				<th rowspan="2">Remarks</th>
+			</tr>
+			<tr> 	
+				<th>TH</th>
+				<th>PR</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>COMP.ENGLISH</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border: none;"><input type="text" id="eng-th" name="eng-th" style="object-fit: contain;"required></td>
+				<td style="border: none;"><input type="text" id="eng-pr" name="eng-pr"required></td>
+				<td><p id="final-eng"></p></td>
+				<td><p id="point-eng"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>COMP.NEPALI</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border: none;"><input type="text" id="nep-th" required></td>
+				<td style="border:none"><input type="text" id="nep-pr" required></td>
+				<td><p id="final-nep" ></p></td>
+				<td><p id="point-nep"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>COMP.MATHEMATICS</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border: none;"><input type="text" id="mat-th" required></td>
+				<td style="border: none;"><input type="text" id="mat-pr" required></td>
+				<td><p id="final-mat" ></p> </td>
+				<td><p id="point-mat"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>COMP.SCIENCE</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border:none;"><input type="text" id="sci-th" required></td>
+				<td style="border: none;"><input type="text" id="sci-pr" required></td>
+				<td><p id="final-sci"></p></td>
+				<td><p id="point-sci"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>COMP.SOCIAL STUDIES</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border:none;"><input type="text" id="soc-th" required></td>
+				<td style="border:none;"><input type="text" id="soc-pr" required></td>
+				<td><p id="final-soc"></p></td>
+				<td><p id="point-soc"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>COMP.HEALTH, POP & ENV EDU</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border: none;"><input type="text" id="hpe-th" required></td>
+				<td style="border:none;"><input type="text" id="hpe-pr" required></td>
+				<td><p id="final-hpe"></p></td>
+				<td><p id="point-hpe"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>OPT.I ADDITIONAL MATHEMATICS</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border:none;"><input type="text" id="opt-th" required></td>
+				<td style="border:none;"><input type="text" id="opt-pr" required></td>
+				<td><p id="final-opt"></p></td>
+				<td><p id="point-opt"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td >OPT.II COMPUTER SCIENCE</td>
+				<td>4</td>
+				<td>100</td>
+				<td style="border:none;"><input type="text" id="cs-th" required></td>
+				<td style="border:none;"><input type="text" id="cs-pr" required></td>
+				<td><p id="final-cs" ></p></td>
+				<td><p id="point-cs"></p></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th colspan="5" style="border: none;">Grade:</th>
+				<th  style="border:none">Percentage:</th>
+			</tr>
+			<tr>
+			<td colspan="3"><p  id="total-grade"> </p></td>
+			<td colspan="4"> <p id="total-percentage"></p></td>
+			</tr>
+			<tr>
+			<td colspan="9" rowspan="2" style="text-align:center;"><button onclick="cal()" style="height: 20px;">Calculate</button></td>
+			</tr>
+		</table>
+		</form>
+		<script src="grade_calculator.js"></script>
+	</body>
+</html>
